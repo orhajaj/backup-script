@@ -1,19 +1,16 @@
-# Backup Script Project
+# Bash Project 1 – File Organizer
 
-This project includes a simple Bash script to automate backups on a Linux system.
+A simple Bash script that organizes files in a directory by file type.
 
-## 🔧 What It Does
+## 📂 What It Does
 
-- Compresses a target directory into a `.tar.gz` file
-- Saves the backup in a dedicated `backups` folder
-- Includes a timestamp in the file name for easy tracking
-- Designed to run daily using `cron`
-- Uses a dedicated user (`backupuser`) to run the script securely
+- Takes a directory path as input
+- Sorts all files into subfolders based on their extensions (e.g., `.txt`, `.sh`)
+- Skips folders or hidden/system files
 
-## 🚀 Usage
-
-Run manually:
+## 🛠️ How to Use
 
 ```bash
-./backup.sh
-
+chmod +x file_organizer.sh
+./file_organizer.sh
+```
